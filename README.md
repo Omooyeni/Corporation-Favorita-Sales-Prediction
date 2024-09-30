@@ -10,15 +10,15 @@ The dataset is provided by Corporation Favorita and includes historical sales da
 # Project Objectives
 Data Exploration and Preprocessing: Understand the dataset, data cleaning and feature engineering to make the data suitable for machine learning models.
 
-Model Building: Train various machine learning models such as:
+Model Building: Train various machine learning models such as: 
 
 Linear Regression
-Decision Trees
-Random Forest
+AutoRegressive Intergrated Moving Average(ARIMA)
 Gradient Boosting (XGBoost)
-Model Evaluation: Evaluate models using metrics like Root Mean Squared Error (RMSE) and choose the best performing model.
 
-Model Tuning: Perform hyperparameter tuning to further improve model accuracy.
+Model Evaluation: Evaluate models using metrics like Root Mean Squared Error (MSE), (RMSE) and choose the best performing model.
+
+Model Tuning: Perform hyperparameter tuning on XGBoost further improve model accuracy.
 
 Prediction: Use the optimized model to predict future sales.
 
@@ -27,17 +27,17 @@ Prediction: Use the optimized model to predict future sales.
 Analyze the dataset to understand trends and patterns using visualiztions.
 2. Data Preprocessing
 Handle missing values.
-Engineer features from dates (e.g., day of the week, holiday flag).
+Engineer features from dates (week, month,quater and year).
 Encode categorical features.
 Scaling.
 3. Model Training
 Train and validate models using a time-series split to maintain the temporal structure of the data.
-Compare model performance based on RMSE and other relevant metrics.
+Compare model performance based on RMSE, MSE, and MAE.
 4. Model Tuning and Optimization
-Use techniques like grid search and random search to optimize hyperparameters.
+Use grid search and random search to optimize hyperparameters.
 Evaluate models on the validation set to avoid overfitting.
 5. Final Predictions
-Use the best model to make predictions for future sales.
+Use the best model (XGBoost) to make predictions for future sales.
 Compare the predicted sales against actuals for final evaluation.
 
 # Results and Conclusion
